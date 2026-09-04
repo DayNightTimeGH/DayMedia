@@ -977,7 +977,7 @@ function renderPostEl(post) {
       '<button class="action-btn like-btn' + (iLiked ? ' active' : '') + '">👍 <span class="like-count">' + likeCount + '</span></button>' +
       '<button class="action-btn dislike-btn' + (iDisliked ? ' active' : '') + '">👎 <span class="dislike-count">' + dislikeCount + '</span></button>' +
       '<button class="action-btn comment-toggle-btn">💬 ' + comments.length + '</button>' +
-      (!isOwnPost ? '<button class="action-btn follow-btn' + (iFollow ? ' follow-active' : '') + '">' + (iFollow ? 'Favourited' : 'Favourite') + '</button>' : '') +
+      (!isOwnPost ? '<button class="action-btn follow-btn' + (iFollow ? ' follow-active' : '') + '">' + (iFollow ? 'Favourited User' : 'Favourite User') + '</button>' : '') +
       '<span class="spacer"></span>' +
       (isOwnPost ? '<button class="danger-btn delete-post-btn">Delete</button>' : '') +
       (isOwner && !isOwnPost && !authorIsOwner ? '<button class="danger-btn takedown-btn">' + (post.takenDown ? 'Restore' : 'Take down') + '</button>' : '') +
